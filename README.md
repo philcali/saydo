@@ -12,7 +12,7 @@ I'll use it.
     saydo
 
     #Unix world
-    cat saydo >> todos.md
+    saydo >> todos.md
 
 Interactive mode allows you to type in the stuffs for the week.
 
