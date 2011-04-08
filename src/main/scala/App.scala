@@ -31,8 +31,9 @@ object App {
     println
     contents foreach { what =>
       val (name, todos) = what
-      println("- %s" format(name))
-      println(todos.map("  - " + _.trim).mkString("\n"))
+      println("- **%s**" format(name))
+      println(todos.map("    - " + _.trim).mkString("\n"))
+      println
     }
   }
 }
