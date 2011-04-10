@@ -18,6 +18,16 @@ Interactive mode allows you to type in the stuffs for the week.
 
     saydo -i
 
+Append to a file, in a non Unix world
+
+    saydo -a todos.md
+    # Even works in interactive mode
+    saydo -i -a todos.md
+
+Append to a file, but only replace the *Weekly* boilerplate stuff.
+
+    saydo -i -r -a todos.md
+
 ## Installation
 
     cs philcali/saydo

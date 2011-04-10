@@ -33,10 +33,11 @@ object App {
           case _ => new java.io.File("todos.md")
         }
 
-        // Replace the junks dawg
+        // Replace the junks, dawg
         if(args.contains("-r") and file.exists) {
           val oldcontents = open(file).getLines.mkString("\n")
           val w = new java.io.FileWriter(file)
+          // This could messy, but I don't care enough about it.
           w.write(oldcontents.split(header)(0))
           w.close
         }
